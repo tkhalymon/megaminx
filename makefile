@@ -11,8 +11,8 @@ all: megaminx
 megaminx: *.o
 	g++ *.o $(COMPILE_OPT) -o megaminx
 
-*.o: *.cpp
-	g++ -c *.cpp
+*.o: engine/*.cpp *.cpp
+	g++ -c engine/*.cpp *.cpp
 
 
 clean:

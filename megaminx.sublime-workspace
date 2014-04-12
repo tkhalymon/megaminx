@@ -3,6 +3,518 @@
 	{
 		"selected_items":
 		[
+			[
+				"glutInitWin",
+				"glutInitWindowSize(int width, int height)	void"
+			],
+			[
+				"GL_DEPTH_",
+				"GL_DEPTH_TEST	macro"
+			],
+			[
+				"GL_DEPTH_BUFF",
+				"GL_DEPTH_BUFFER_BIT	macro"
+			],
+			[
+				"GL_DEPT",
+				"GL_DEPTH_TEST	macro"
+			],
+			[
+				"GL_DEPT_BU",
+				"GL_DEPTH_BUFFER_BIT	macro"
+			],
+			[
+				"SI",
+				"SIDE_ANGLE	const double"
+			],
+			[
+				"INS",
+				"INS_SPHERE_RAD	const double"
+			],
+			[
+				"glDodeca",
+				"glutSolidDodecahedron()	void"
+			],
+			[
+				"Road",
+				"RoadRef	typedef"
+			],
+			[
+				"t",
+				"tmp()	Temp *"
+			],
+			[
+				"e",
+				"empty() const	bool"
+			],
+			[
+				"Fi",
+				"finPos()	RoadRef"
+			],
+			[
+				"for",
+				"for	For Loop"
+			],
+			[
+				"glVertex",
+				"glVertex2d(GLdouble x, GLdouble y)	void"
+			],
+			[
+				"ba",
+				"_backway	RoadRef"
+			],
+			[
+				"glColor",
+				"glColor3d(GLdouble red, GLdouble green, GLdouble blue)	void"
+			],
+			[
+				"tmp",
+				"temp	Temp"
+			],
+			[
+				"fi",
+				"finPos()	RoadRef"
+			],
+			[
+				"d",
+				"distance(Pos2d)	double"
+			],
+			[
+				"clea",
+				"clearTemp()	void"
+			],
+			[
+				"prev",
+				"prevPos	Pos2d"
+			],
+			[
+				"write",
+				"writelog(const char *)	void"
+			],
+			[
+				"AS",
+				"AStarTemp	class"
+			],
+			[
+				"r",
+				"rel()	std::vector<Road> *"
+			],
+			[
+				"beg",
+				"begin()	CroadRef"
+			],
+			[
+				"_nex",
+				"_nextAng	double"
+			],
+			[
+				"Tu",
+				"TurnLeft	Car::TurnDirection"
+			],
+			[
+				"tu",
+				"turnDir	Car::TurnDirection"
+			],
+			[
+				"re",
+				"render()	void"
+			],
+			[
+				"GLUT_TIMES",
+				"GLUT_BITMAP_TIMES_ROMAN_24	macro"
+			],
+			[
+				"glRasterPos2d",
+				"glRasterPos2d(GLdouble x, GLdouble y)	void"
+			],
+			[
+				"T",
+				"TurnDirection	enum"
+			],
+			[
+				"st",
+				"struct	struct"
+			],
+			[
+				"getW",
+				"getWayAStar(Car *c)	RoadRef"
+			],
+			[
+				"s",
+				"setSysSpeed(double)	void"
+			],
+			[
+				"get",
+				"getWayFunc(RoadRef (*getWayFunc)(Car *))	void"
+			],
+			[
+				"A",
+				"AlgoType	enum"
+			],
+			[
+				"i",
+				"inc	#include \"…\""
+			],
+			[
+				"angle",
+				"_angle	double"
+			],
+			[
+				"GL_STIPPLE_",
+				"GL_LINE_STIPPLE_REPEAT	macro"
+			],
+			[
+				"GL_LINE_S",
+				"GL_LINE_STIPPLE	macro"
+			],
+			[
+				"glLine",
+				"glLineStipple(GLint factor, GLushort pattern)	void"
+			],
+			[
+				"Croad",
+				"CroadRef	typedef"
+			],
+			[
+				"vecto",
+				"vector	std::vector"
+			],
+			[
+				"c",
+				"croad	std::vector<Croad>"
+			],
+			[
+				"glutGet",
+				"glutGet(GLenum query)	int"
+			],
+			[
+				"render",
+				"renderString(int x, int y, char *string)	void"
+			],
+			[
+				"Car",
+				"CarRef	typedef"
+			],
+			[
+				"GL_LE",
+				"GL_LEQUAL	macro"
+			],
+			[
+				"glPoly",
+				"glPolygonMode(GLenum face, GLenum mode)	void"
+			],
+			[
+				"glColo",
+				"glColor3d(GLdouble red, GLdouble green, GLdouble blue)	void"
+			],
+			[
+				"glCol",
+				"glColor3d(GLdouble red, GLdouble green, GLdouble blue)	void"
+			],
+			[
+				"glColor3d",
+				"glColor3d(GLdouble red, GLdouble green, GLdouble blue)	void"
+			],
+			[
+				"glutSphere",
+				"glutWireSphere(GLdouble radius, GLint slices, GLint stacks)	void"
+			],
+			[
+				"glVertex3d",
+				"glVertex3d(GLdouble x, GLdouble y, GLdouble z)	void"
+			],
+			[
+				"glPop",
+				"glPopMatrix()	void"
+			],
+			[
+				"inte",
+				"interactCroad()	SpdAction"
+			],
+			[
+				"unlock",
+				"unlockCroad(CroadRef c)	void"
+			],
+			[
+				"b",
+				"busy	bool"
+			],
+			[
+				"intC",
+				"intCroad	SpdAction"
+			],
+			[
+				"exp",
+				"expdist	double"
+			],
+			[
+				"find",
+				"findFwdCar()	void"
+			],
+			[
+				"unloc",
+				"unlockCroad(CroadRef)	void"
+			],
+			[
+				"Cro",
+				"CroadRefRef	typedef"
+			],
+			[
+				"po",
+				"rpos	Pos"
+			],
+			[
+				"Slow",
+				"SlowBreak	SpeedControl"
+			],
+			[
+				"SL",
+				"SlowBreak	SpeedControl"
+			],
+			[
+				"fast",
+				"fastBreak()	void"
+			],
+			[
+				"Fas",
+				"FastBreak	SpeedControl"
+			],
+			[
+				"Fa",
+				"FastBreak	SpeedControl"
+			],
+			[
+				"slow",
+				"slowBreak()	void"
+			],
+			[
+				"interact",
+				"interactCroad()	void"
+			],
+			[
+				"brea",
+				"breakDist()	double"
+			],
+			[
+				"ma",
+				"manual	bool"
+			],
+			[
+				"a",
+				"a	int"
+			],
+			[
+				"On",
+				"OnCrossroad	State"
+			],
+			[
+				"ang",
+				"angRoad	double"
+			],
+			[
+				"ex",
+				"expected	RoadRef"
+			],
+			[
+				"pos",
+				"pos	RoadRef"
+			],
+			[
+				"Ca",
+				"Car::sysSpd	double"
+			],
+			[
+				"Ro",
+				"RoadRef	typedef"
+			],
+			[
+				"distance",
+				"distance(Pos other)	double"
+			],
+			[
+				"load",
+				"load(const char *filename)	void"
+			],
+			[
+				"wa",
+				"wayCounted	bool"
+			],
+			[
+				"ON",
+				"OnWay	State"
+			],
+			[
+				"glTexture",
+				"glDeleteTextures(GLsizei n, const GLuint *textures)	void"
+			],
+			[
+				"di",
+				"distance(Pos other)	double"
+			],
+			[
+				"rende",
+				"renderInteger(int x, int y, int number)	void"
+			],
+			[
+				"glTexCoord2d",
+				"glTexCoord2d(GLdouble s, GLdouble t)	void"
+			],
+			[
+				"le",
+				"len	double"
+			],
+			[
+				"end",
+				"end	CroadRef"
+			],
+			[
+				"Cr",
+				"CroadRef	typedef"
+			],
+			[
+				"co",
+				"cout	ostream"
+			],
+			[
+				"inv",
+				"invCroad(CroadRef croad)	void"
+			],
+			[
+				"R",
+				"RoadRef	typedef"
+			],
+			[
+				"Crad",
+				"CroadRef	typedef"
+			],
+			[
+				"Ra",
+				"RoadRef	typedef"
+			],
+			[
+				"glVertex2d",
+				"glVertex2d(GLdouble x, GLdouble y)	void"
+			],
+			[
+				"set",
+				"setDispl(Pos d)	void"
+			],
+			[
+				"mo",
+				"mousePos	Pos"
+			],
+			[
+				"Map",
+				"MapMove	MouseState"
+			],
+			[
+				"move",
+				"moveDispl(Pos d)	void"
+			],
+			[
+				"GLUT_KEY_PAG",
+				"GLUT_KEY_PAGE_UP	macro"
+			],
+			[
+				"O",
+				"OnWay	State"
+			],
+			[
+				"def",
+				"defScale	const double"
+			],
+			[
+				"begi",
+				"begin	CroadRef"
+			],
+			[
+				"begin",
+				"begin()	iterator"
+			],
+			[
+				"RO",
+				"RoadPos	class"
+			],
+			[
+				"edge",
+				"edgeE	Pos"
+			],
+			[
+				"be",
+				"begin()	iterator"
+			],
+			[
+				"zoom",
+				"zoomOut()	void"
+			],
+			[
+				"zo",
+				"zoomOut()	void"
+			],
+			[
+				"D",
+				"Down	Direction"
+			],
+			[
+				"map",
+				"map	Map"
+			],
+			[
+				"GL_POINT",
+				"GL_POINT	macro"
+			],
+			[
+				"GL_DEPTH_BU",
+				"GL_DEPTH_BUFFER_BIT	macro"
+			],
+			[
+				"setDest",
+				"setDest(CroadRef dest)	void"
+			],
+			[
+				"plan",
+				"plane1	Plane"
+			],
+			[
+				"S",
+				"SPEED"
+			],
+			[
+				"subj",
+				"subjects"
+			],
+			[
+				"ec",
+				"echo"
+			],
+			[
+				"mysqlf",
+				"mysql_fetch_assoc"
+			],
+			[
+				"mysql_fet",
+				"mysql_fetch_assoc"
+			],
+			[
+				"crr",
+				"correctSpeed"
+			],
+			[
+				"cou",
+				"countWay"
+			],
+			[
+				"fr",
+				"frCar	CarRef"
+			],
+			[
+				"f",
+				"finD	double"
+			],
+			[
+				"finD",
+				"finD	double"
+			]
 		]
 	},
 	"buffers":
@@ -11,16 +523,90 @@
 			"file": "main.cpp",
 			"settings":
 			{
-				"buffer_size": 1498,
+				"buffer_size": 2944,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/taras/dev/investigation/glut init/initGLUT.cpp",
+			"file": "engine/corner.cpp",
 			"settings":
 			{
-				"buffer_size": 1523,
+				"buffer_size": 19,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "engine/corner.h",
+			"settings":
+			{
+				"buffer_size": 102,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "engine/face.cpp",
+			"settings":
+			{
+				"buffer_size": 19,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "engine/face.h",
+			"settings":
+			{
+				"buffer_size": 146,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "engine/part.cpp",
+			"settings":
+			{
+				"buffer_size": 17,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "engine/part.h",
+			"settings":
+			{
+				"buffer_size": 93,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "engine/side.cpp",
+			"settings":
+			{
+				"buffer_size": 19,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "engine/side.h",
+			"settings":
+			{
+				"buffer_size": 92,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/taras/dev/main.cpp",
+			"settings":
+			{
+				"buffer_size": 1260,
+				"line_ending": "Unix",
+				"name": "main.cpp"
+			}
+		},
+		{
+			"file": "/home/taras/dev/m.cpp",
+			"settings":
+			{
+				"buffer_size": 1027,
+				"line_ending": "Unix",
+				"name": "m.cpp"
 			}
 		}
 	],
@@ -100,9 +686,134 @@
 	},
 	"file_history":
 	[
+		"/home/taras/todo.txt",
+		"/home/taras/main.cpp",
+		"/home/taras/dev/megaminx/makefile",
+		"/home/taras/dev/megaminx/corner.h",
+		"/home/taras/dev/megaminx/corner.cpp",
+		"/home/taras/dev/megaminx/side.h",
+		"/home/taras/dev/megaminx/side.cpp",
+		"/home/taras/dev/megaminx/part.h",
+		"/home/taras/dev/megaminx/part.cpp",
+		"/home/taras/dev/megaminx/face.h",
+		"/home/taras/dev/megaminx/face.cpp",
+		"/home/taras/dev/investigation/PNGTex/clearpng/PNGTex.h",
+		"/home/taras/dev/investigation/PNGTex/clearpng/PNGTex.cpp",
+		"/home/taras/dev/investigation/PNGTex/clearpng/clearpng.h",
+		"/home/taras/dev/investigation/PNGTex/clearpng/clearpng.cpp",
+		"/home/taras/dev/investigation/PNGTex/clearpng/lpng.h",
+		"/home/taras/dev/investigation/PNGTex/clearpng/lpng.cpp",
+		"/home/taras/dev/investigation/PNGTex/clearpng/lodepng.cpp",
+		"/home/taras/dev/investigation/PNGTex/clearpng/lodepng.h",
+		"/home/taras/dev/investigation/PNGTex/clearpng.h",
+		"/home/taras/dev/investigation/PNGTex/clearpng.cpp",
+		"/home/taras/dev/investigation/PNGTex/PNGTex.h",
+		"/home/taras/dev/investigation/PNGTex/PNGTex.cpp",
+		"/home/taras/dev/investigation/PNGTex/lodepng.h",
+		"/home/taras/dev/investigation/PNGTex/lodepng.cpp",
+		"/usr/include/GL/glu.h",
+		"/usr/include/GL/glu_mangle.h",
+		"/home/taras/man(actual)/city-simulator(stable)/main.cpp",
+		"/home/taras/dev/investigation/glut init/initGLUT.cpp",
 		"/home/taras/dev/megaminx/megaminx.sublime-workspace",
+		"/home/taras/dev/megaminx/megaminx.sublime-project",
+		"/home/taras/.config/sublime-text-2/Packages/Package Control/Package Control.sublime-settings",
+		"/home/taras/.config/sublime-text-2/Packages/User/Distraction Free.sublime-settings",
+		"/home/taras/.config/sublime-text-2/Packages/User/Plain text.sublime-settings",
 		"/home/taras/man(actual)/city-simulator(stable)/makefile",
-		"/home/taras/dev/megaminx/makefile"
+		"/home/taras/untitled.sh",
+		"/home/taras/megaminx/main.cpp",
+		"/home/taras/megaminx/README.md",
+		"/home/taras/Desktop/man(actual)/city-simulator(stable)/input/rel.in",
+		"/home/taras/Desktop/man(actual)/city-simulator(stable)/ui/map.cpp",
+		"/home/taras/Desktop/man(actual)/city-simulator(stable)/input/map.in",
+		"/home/taras/biplanes/main.cpp",
+		"/home/taras/Desktop/man(actual)/city-simulator(stable)/ui/ui.cpp",
+		"/home/taras/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/taras/Desktop/man(actual)/city-simulator(stable)/engine/trsys.cpp",
+		"/home/taras/biplanes/plane.cpp",
+		"/media/09249500-1651-4100-9767-9559bf136993/.mtoolsrc",
+		"/home/taras/man(actual)/city-simulator(stable)/ui/lodepng.cpp",
+		"/home/taras/man(actual)/city-simulator(stable)/input/cars.in",
+		"/home/taras/biplanes/game.cpp",
+		"/home/taras/biplanes/bullet.cpp",
+		"/home/taras/Desktop/man(actual)/city-simulator(stable)/main.cpp",
+		"/home/taras/oldv/city-simulator/engine/trsys.h",
+		"/home/taras/oldv/city-simulator/ui/map.cpp",
+		"/home/taras/oldv/city-simulator/engine/trsys.cpp",
+		"/home/taras/oldv/city-simulator/engine/temp.h",
+		"/home/taras/oldv/city-simulator/engine/temp.cpp",
+		"/home/taras/oldv/city-simulator/engine/road.h",
+		"/home/taras/oldv/city-simulator/engine/road.cpp",
+		"/home/taras/oldv/city-simulator/engine/pos.h",
+		"/home/taras/oldv/city-simulator/engine/pos.cpp",
+		"/home/taras/oldv/city-simulator/engine/makefile",
+		"/home/taras/oldv/city-simulator/engine/croad.h",
+		"/home/taras/oldv/city-simulator/engine/croad.cpp",
+		"/home/taras/oldv/city-simulator/engine/car.h",
+		"/home/taras/oldv/city-simulator/engine/car.cpp",
+		"/home/taras/oldv/city-simulator/main.cpp",
+		"/home/taras/oldv/city-simulator/makefile",
+		"/home/taras/new/education.ui",
+		"/home/taras/oldv/city-simulator/ui/lodepng.h",
+		"/home/taras/new/ui/lodepng.cpp",
+		"/media/3CA0509DA0506006/_МАН/Kubik_Rubika-build-desktop/release/moc_mainwindow_kubik.cpp",
+		"/home/taras/city-simulator/engine/temp.cpp",
+		"/home/taras/city-simulator/engine/road.h",
+		"/home/taras/city-simulator/engine/road.cpp",
+		"/home/taras/city-simulator/engine/croad.h",
+		"/home/taras/city-simulator/engine/car.cpp",
+		"/home/taras/.config/sublime-text-2/Packages/SublimeClang/SublimeClang.sublime-settings",
+		"/home/taras/Downloads/Guitar_Pro_5.2_rus/Readme.txt",
+		"/home/taras/city-simulator/applogs.txt",
+		"/home/taras/city-simulator/main.cpp",
+		"/home/taras/.config/sublime-text-2/Packages/SublimeAStyleFormatter/SublimeAStyleFormatter.sublime-settings",
+		"/var/www/site/index.php",
+		"/home/taras/.config/sublime-text-2/Packages/PHP/for(-).sublime-snippet",
+		"/home/taras/city-simulator/engine/log.cpp",
+		"/home/taras/city-simulator/engine/log.h",
+		"/home/taras/.config/sublime-text-2/Packages/C++/C++.sublime-build",
+		"/home/taras/.config/sublime-text-2/Packages/Makefile/Make.sublime-build",
+		"/home/taras/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/taras/transport system/engine fix/city-simulator/engine/car.cpp",
+		"/media/Windows USB/System Volume Information/IndexerVolumeGuid",
+		"/home/taras/diff/Untitled Folder/check.sh",
+		"/home/taras/gravity-sim/units.cpp",
+		"/home/taras/gravity-sim/main.cpp",
+		"/home/taras/known songs",
+		"/media/UDF Volume/efi/microsoft/boot/bcd",
+		"/home/taras/enginefix/city-simulator/makefile",
+		"/home/taras/Dropbox/ман.txt",
+		"/home/taras/Dropbox/Інфолрматика(конспект).txt",
+		"/home/taras/Dropbox/engine.cpp",
+		"/home/taras/Downloads/lesson1/main.cpp",
+		"/home/taras/Downloads/lesson1/Makefile",
+		"/home/taras/Dropbox/bookmarks-2013-04-27.json",
+		"/home/taras/enginefix/city-simulator/engine/croad.cpp",
+		"/home/taras/transport system/engine fix/city-simulator/engine/trsys.cpp",
+		"/home/taras/enginefix/city-simulator/engine/pos2d.cpp",
+		"/home/taras/enginefix/city-simulator/main.cpp",
+		"/home/taras/enginefix/city-simulator/ui/map.h",
+		"/home/taras/enginefix/city-simulator/ui/map.cpp",
+		"/var/www/labs/index.html",
+		"/home/taras/Common/marilyn_manson-the_last_day_on_earth_live.gp3",
+		"/var/www/labs/table.html",
+		"/var/www/labs/laba2_2/students.html",
+		"/var/www/labs/laba2_2/Students/ruban.html",
+		"/var/www/labs/laba2_2/Students/puzanov.html",
+		"/var/www/labs/laba2_2/Students/pulinets.html",
+		"/var/www/labs/laba2_2/Students/lytvyn.html",
+		"/var/www/labs/laba2_2/Students/krasnikova.html",
+		"/var/www/labs/laba2_2/Students/kotkova.html",
+		"/var/www/labs/laba2_2/Students/dovganuk.html",
+		"/var/www/labs/laba2_2/Students/chabala.html",
+		"/var/www/labs/laba2_2/Students/bublik.html",
+		"/var/www/labs/laba2_2/Students/baran.html",
+		"/var/www/labs/laba2_2/Students/10.html",
+		"/var/www/labs/laba2_2/Students/9.html",
+		"/var/www/labs/laba2_2/Students/8.html",
+		"/var/www/labs/laba2_2/Students/7.html",
+		"/var/www/labs/laba2_2/Students/6.html"
 	],
 	"find":
 	{
@@ -118,9 +829,137 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"height",
+			"width",
+			"glwid",
+			"ui",
+			"180 / ",
+			"180",
+			"288 / PI / 2",
+			"72 / PI / 2",
+			"540",
+			"432",
+			"324",
+			"216",
+			"PI",
+			"108",
+			"100",
+			"lodepng_state_cleanup",
+			"lodepng_decode",
+			"lodepng_color_mode_init",
+			"lodepng_state_init",
+			"LodePNGState",
+			"State",
+			"LodePNGColorType",
+			"LodePNGColorMode",
+			"LodePNGState",
+			"free",
+			"lodepng_free(",
+			"lodepng_free",
+			"LodePNGState",
+			"decode(std::vector<unsigned char>& out, unsigned& w, unsigned& h,\n                const std::string& filename,",
+			"LodePNGColorType",
+			"decode(",
+			"decode",
+			"decode(",
+			"100",
+			"quad",
+			"GLUquadric",
+			"100",
+			" - 200",
+			"mageminx",
+			"trsys",
+			"150",
+			"24",
+			"23",
+			"22",
+			"21",
+			"20",
+			"19",
+			"18",
+			"17",
+			"16",
+			"15",
+			"14",
+			"13",
+			"12",
+			"24",
+			"23",
+			"fin",
+			"pos",
+			"temp.",
+			"c",
+			"lenth",
+			"temp.",
+			"i->end->temp",
+			" = T",
+			"road",
+			"TStart",
+			"!= TUnknown",
+			"border",
+			"_pos",
+			"_pos.road",
+			"rp",
+			"c->pos()->end()",
+			"R",
+			" \n",
+			"prevAng",
+			"Template",
+			"trsystem",
+			"\n",
+			"int",
+			"Car",
+			"ctrl+shift+b",
+			"ctrl+b",
+			"startdist",
+			"_breakPoint",
+			"cos",
+			");\n",
+			"10",
+			"halfAngle",
+			"defWeight",
+			"glutGet(GLUT_WINDOW_HEIGHT)",
+			"x",
+			"al",
+			"map.",
+			"angle",
+			"rpos",
+			"pulinetc",
+			"example",
+			"align",
+			"Катерина Красникова",
+			"example",
+			"charset",
+			"example",
+			"7",
+			"1",
+			"href",
+			"_pos->",
+			"_pos",
+			"_dist",
+			"_road",
+			"pos->",
+			"pos",
+			"_pos()",
+			"pos",
+			"dist",
+			"small",
+			"map.scale",
+			"destpos",
+			"_Road",
+			"road",
+			"Road",
+			"road",
+			"Road",
+			"road",
+			"end",
+			"definitely",
+			"delete",
+			"\n	",
+			" + PI / 2"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -139,7 +978,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 10,
 			"sheets":
 			[
 				{
@@ -147,41 +986,15 @@
 					"file": "main.cpp",
 					"settings":
 					{
-						"buffer_size": 1498,
+						"buffer_size": 2944,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								947,
-								947
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1320.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/taras/dev/investigation/glut init/initGLUT.cpp",
-					"settings":
-					{
-						"buffer_size": 1523,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1523,
-								1523
+								2075,
+								2075
 							]
 						],
 						"settings":
@@ -190,7 +1003,271 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1254.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "engine/corner.cpp",
+					"settings":
+					{
+						"buffer_size": 19,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "engine/corner.h",
+					"settings":
+					{
+						"buffer_size": 102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "engine/face.cpp",
+					"settings":
+					{
+						"buffer_size": 19,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "engine/face.h",
+					"settings":
+					{
+						"buffer_size": 146,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "engine/part.cpp",
+					"settings":
+					{
+						"buffer_size": 17,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "engine/part.h",
+					"settings":
+					{
+						"buffer_size": 93,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "engine/side.cpp",
+					"settings":
+					{
+						"buffer_size": 19,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "engine/side.h",
+					"settings":
+					{
+						"buffer_size": 92,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/home/taras/dev/main.cpp",
+					"settings":
+					{
+						"buffer_size": 1260,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								904,
+								904
+							]
+						],
+						"settings":
+						{
+							"auto_name": "main.cpp",
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 852.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/home/taras/dev/m.cpp",
+					"settings":
+					{
+						"buffer_size": 1027,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1027,
+								1027
+							]
+						],
+						"settings":
+						{
+							"auto_name": "m.cpp",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
