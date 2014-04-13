@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"draw",
+				"drawOpositeSide()	void"
+			],
+			[
 				"glutInitWin",
 				"glutInitWindowSize(int width, int height)	void"
 			],
@@ -510,10 +514,6 @@
 			[
 				"f",
 				"finD	double"
-			],
-			[
-				"finD",
-				"finD	double"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "main.cpp",
 			"settings":
 			{
-				"buffer_size": 2944,
+				"buffer_size": 5121,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "engine/corner.h",
 			"settings":
 			{
-				"buffer_size": 102,
+				"buffer_size": 190,
 				"line_ending": "Unix"
 			}
 		},
@@ -571,7 +571,7 @@
 			"file": "engine/part.h",
 			"settings":
 			{
-				"buffer_size": 93,
+				"buffer_size": 116,
 				"line_ending": "Unix"
 			}
 		},
@@ -595,9 +595,18 @@
 			"file": "/home/taras/dev/main.cpp",
 			"settings":
 			{
-				"buffer_size": 1260,
+				"buffer_size": 1264,
 				"line_ending": "Unix",
 				"name": "main.cpp"
+			}
+		},
+		{
+			"file": "/home/taras/dev/k.cpp",
+			"settings":
+			{
+				"buffer_size": 2887,
+				"line_ending": "Unix",
+				"name": "k.cpp"
 			}
 		},
 		{
@@ -686,6 +695,7 @@
 	},
 	"file_history":
 	[
+		"/home/taras/l.cpp",
 		"/home/taras/todo.txt",
 		"/home/taras/main.cpp",
 		"/home/taras/dev/megaminx/makefile",
@@ -812,8 +822,7 @@
 		"/var/www/labs/laba2_2/Students/10.html",
 		"/var/www/labs/laba2_2/Students/9.html",
 		"/var/www/labs/laba2_2/Students/8.html",
-		"/var/www/labs/laba2_2/Students/7.html",
-		"/var/www/labs/laba2_2/Students/6.html"
+		"/var/www/labs/laba2_2/Students/7.html"
 	],
 	"find":
 	{
@@ -832,6 +841,12 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			" 0.5",
+			"0.1",
+			"glColor3d",
+			" + PI / 2",
+			"NULL",
+			"TRUE",
 			"height",
 			"width",
 			"glwid",
@@ -953,13 +968,7 @@
 			"road",
 			"Road",
 			"road",
-			"Road",
-			"road",
-			"end",
-			"definitely",
-			"delete",
-			"\n	",
-			" + PI / 2"
+			"Road"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -978,7 +987,7 @@
 	"groups":
 	[
 		{
-			"selected": 10,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -986,15 +995,15 @@
 					"file": "main.cpp",
 					"settings":
 					{
-						"buffer_size": 2944,
+						"buffer_size": 5121,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2075,
-								2075
+								3675,
+								3675
 							]
 						],
 						"settings":
@@ -1003,7 +1012,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1567.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1039,15 +1048,15 @@
 					"file": "engine/corner.h",
 					"settings":
 					{
-						"buffer_size": 102,
+						"buffer_size": 190,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								76,
+								76
 							]
 						],
 						"settings":
@@ -1072,8 +1081,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								19,
+								19
 							]
 						],
 						"settings":
@@ -1143,15 +1152,15 @@
 					"file": "engine/part.h",
 					"settings":
 					{
-						"buffer_size": 93,
+						"buffer_size": 116,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								105,
+								105
 							]
 						],
 						"settings":
@@ -1221,30 +1230,60 @@
 					"file": "/home/taras/dev/main.cpp",
 					"settings":
 					{
-						"buffer_size": 1260,
+						"buffer_size": 1264,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								904,
-								904
+								17,
+								17
 							]
 						],
 						"settings":
 						{
 							"auto_name": "main.cpp",
-							"syntax": "Packages/C++/C++.tmLanguage"
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 852.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 10,
+					"file": "/home/taras/dev/k.cpp",
+					"settings":
+					{
+						"buffer_size": 2887,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2184,
+								2184
+							]
+						],
+						"settings":
+						{
+							"auto_name": "k.cpp",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1210.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
 					"file": "/home/taras/dev/m.cpp",
 					"settings":
 					{

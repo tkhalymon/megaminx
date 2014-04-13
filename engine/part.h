@@ -7,7 +7,8 @@ public:
 	Part();
 	~Part();
 
-		
+	virtual void render();
+	
 };
 
 #endif

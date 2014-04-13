@@ -1,6 +1,9 @@
 #include <GL/glut.h>
 #include <math.h>
 
+double angle = 0;
+#include <iostream>
+
 void display();
 void timer(int);
 void mousePressed(int button, int state, int x, int y);
@@ -13,7 +16,7 @@ const double FI = (1 + sqrt(5)) / 2;
 const double PI = acos(-1);
 const double SIDE_ANGLE = 2 * atan(FI);
 const double INS_SPHERE_RAD = 100 * sqrt(10 + 22 / sqrt(5)) / 4;
-const double INS_CIRCLE_RAD = 100 / sqrt((5 - sqrt(5)) / 2);
+const double INS_CIRCLE_RAD = 90 / sqrt((5 - sqrt(5)) / 2);
 
 int main(int argc, char *argv[])
 {
@@ -22,7 +25,7 @@ int main(int argc, char *argv[])
 	int h = glutGet(GLUT_SCREEN_HEIGHT);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
 	glutInitWindowSize(w, h);
-	glutCreateWindow("Megaminx v 0.1");
+	glutCreateWindow("Megaminx v 0.2");
 	glClearColor(0.0, 0.0, 0.0, 0.0);
 	glLoadIdentity();
 	glMatrixMode(GL_PROJECTION);
@@ -30,7 +33,7 @@ int main(int argc, char *argv[])
 	glMatrixMode(GL_MODELVIEW);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	glutDisplayFunc(display);
-	glutTimerFunc(20, timer, 0);
+	glutTimerFunc(2, timer, 0);
 	glutMouseFunc(mousePressed);
 	glutPassiveMotionFunc(mouseMove);
 	glutMotionFunc(mousePressedMove);
@@ -42,7 +45,7 @@ int main(int argc, char *argv[])
 	return 0;
 }
 
-void drawSide()
+void drawOpositeSide()
 {
 	glBegin(GL_POLYGON);
 	glVertex3d(INS_CIRCLE_RAD * cos(PI * 2 / 5 * 0 + PI / 2), INS_CIRCLE_RAD * sin(PI * 2 / 5 * 0 + PI / 2), INS_SPHERE_RAD);
@@ -53,22 +56,81 @@ void drawSide()
 	glEnd();
 }
 
+void drawSide()
+{
+	drawOpositeSide();
+	glRotated(36, 0, 0, 1);
+	glBegin(GL_POLYGON);
+	glVertex3d(INS_CIRCLE_RAD * cos(PI * 2 / 5 * 0 + PI / 2), INS_CIRCLE_RAD * sin(PI * 2 / 5 * 0 + PI / 2), -INS_SPHERE_RAD);
+	glVertex3d(INS_CIRCLE_RAD * cos(PI * 2 / 5 * 1 + PI / 2), INS_CIRCLE_RAD * sin(PI * 2 / 5 * 1 + PI / 2), -INS_SPHERE_RAD);
+	glVertex3d(INS_CIRCLE_RAD * cos(PI * 2 / 5 * 2 + PI / 2), INS_CIRCLE_RAD * sin(PI * 2 / 5 * 2 + PI / 2), -INS_SPHERE_RAD);
+	glVertex3d(INS_CIRCLE_RAD * cos(PI * 2 / 5 * 3 + PI / 2), INS_CIRCLE_RAD * sin(PI * 2 / 5 * 3 + PI / 2), -INS_SPHERE_RAD);
+	glVertex3d(INS_CIRCLE_RAD * cos(PI * 2 / 5 * 4 + PI / 2), INS_CIRCLE_RAD * sin(PI * 2 / 5 * 4 + PI / 2), -INS_SPHERE_RAD);
+	glEnd();
+	// glBegin(GL_LINES);
+	// glVertex3d(INS_CIRCLE_RAD * cos(PI * 2 / 5 * 0 + PI / 2), INS_CIRCLE_RAD * sin(PI * 2 / 5 * 0 + PI / 2), -INS_SPHERE_RAD);
+	// glVertex3d(INS_CIRCLE_RAD * cos(PI * 2 / 5 * 1 + PI / 2), INS_CIRCLE_RAD * sin(PI * 2 / 5 * 1 + PI / 2), -INS_SPHERE_RAD);
+	// glVertex3d(INS_CIRCLE_RAD * cos(PI * 2 / 5 * 2 + PI / 2), INS_CIRCLE_RAD * sin(PI * 2 / 5 * 2 + PI / 2), -INS_SPHERE_RAD);
+	// glVertex3d(INS_CIRCLE_RAD * cos(PI * 2 / 5 * 3 + PI / 2), INS_CIRCLE_RAD * sin(PI * 2 / 5 * 3 + PI / 2), -INS_SPHERE_RAD);
+	// glVertex3d(INS_CIRCLE_RAD * cos(PI * 2 / 5 * 4 + PI / 2), INS_CIRCLE_RAD * sin(PI * 2 / 5 * 4 + PI / 2), -INS_SPHERE_RAD);
+	// glEnd();
+}
+
 void display()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glEnable(GL_DEPTH_TEST);
-	glRotated(1, 0, 1, 0);
-	glColor3d(1, 1, 1);
+	glEnable(GL_BLEND);
+	glEnable(GL_ALPHA);
+	glRotated(1, 1, 1, 1);
+	
+	glColor4d(0.9, 0.9, 0.9, 0.4);
 	glPushMatrix();
 	drawSide();
 	glPopMatrix();
+	
 	glPushMatrix();
-	glColor3d(1, 1, 0);
+	glColor4d(1, 1, 0, 0.4);
 	glRotated(36, 0, 0, 1);
 	glRotated(SIDE_ANGLE / PI * 180 - 180, 1, 0, 0);
 	drawSide();
 	glTranslated(0, 0, -100);
 	glPopMatrix();
+	
+	glPushMatrix();
+	glColor4d(0, 1, 0, 0.4);
+	glRotated(108, 0, 0, 1);
+	glRotated(SIDE_ANGLE / PI * 180 - 180, 1, 0, 0);
+	drawSide();
+	glTranslated(0, 0, -100);
+	glPopMatrix();
+	
+
+	glPushMatrix();
+	glColor4d(0, 1, 1, 0.4);
+	glRotated(180, 0, 0, 1);
+	glRotated(SIDE_ANGLE / PI * 180 - 180, 1, 0, 0);
+	drawSide();
+	glTranslated(0, 0, -100);
+	glPopMatrix();
+	
+	glPushMatrix();
+	glColor4d(0, 0, 1, 0.4);
+	glRotated(252, 0, 0, 1);
+	glRotated(SIDE_ANGLE / PI * 180 - 180, 1, 0, 0);
+	drawSide();
+	glTranslated(0, 0, -100);
+	glPopMatrix();
+	
+	glPushMatrix();
+	glColor4d(1, 0, 0, 0.4);
+	glRotated(324, 0, 0, 1);
+	glRotated(SIDE_ANGLE / PI * 180 - 180, 1, 0, 0);
+	drawSide();
+	glTranslated(0, 0, -100);
+	glPopMatrix();
+	
+	glDisable(GL_BLEND);
 	glDisable(GL_DEPTH_TEST);
 	glutSwapBuffers();
 }
@@ -76,7 +138,7 @@ void display()
 void timer(int)
 {
 	glutPostRedisplay();
-	glutTimerFunc(20, timer, 0);
+	glutTimerFunc(2, timer, 0);
 }
 
 void mousePressed(int button, int state, int x, int y)
@@ -102,6 +164,14 @@ void keyboard(unsigned char key, int x, int y)
 		glutDestroyWindow(1);
 		exit(0);
 		break;
+	case 'd':
+		angle--;
+		std::cerr << angle << "\n";
+		break;
+	case 'a':
+		angle++;
+		std::cerr << angle << "\n";
+		break;	
 	}
 }
 
