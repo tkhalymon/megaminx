@@ -4,6 +4,90 @@
 		"selected_items":
 		[
 			[
+				"GLUT_WINDOW",
+				"GLUT_WINDOW_FORMAT_ID	macro"
+			],
+			[
+				"def",
+				"defN	double"
+			],
+			[
+				"swa",
+				"swapEdges(int, int)	void"
+			],
+			[
+				"flip",
+				"flipBack()	void"
+			],
+			[
+				"sw",
+				"swapCorners(int, int)	void"
+			],
+			[
+				"swap",
+				"swapCorners(int, int)	void"
+			],
+			[
+				"glutReshape",
+				"glutReshapeWindow(int width, int height)	void"
+			],
+			[
+				"a",
+				"amb	float[]"
+			],
+			[
+				"glLightf",
+				"glLightfv(GLenum light, GLenum pname, const GLfloat *params)	void"
+			],
+			[
+				"li",
+				"lightPos	double[]"
+			],
+			[
+				"glLightd",
+				"glLightModeli(GLenum pname, GLint param)	void"
+			],
+			[
+				"glLig",
+				"glLightModeli(GLenum pname, GLint param)	void"
+			],
+			[
+				"ro",
+				"_rotate	bool"
+			],
+			[
+				"f",
+				"flip()	void"
+			],
+			[
+				"rotat",
+				"rotated	bool"
+			],
+			[
+				"r",
+				"rotate(int)	void"
+			],
+			[
+				"glVertex",
+				"glVertex3dv(const GLdouble *v)	void"
+			],
+			[
+				"e",
+				"edge	Edge *[5]"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"GL_LINE_S",
+				"GL_LINE_SMOOTH	macro"
+			],
+			[
+				"glLi",
+				"glLineWidth(GLfloat width)	void"
+			],
+			[
 				"draw",
 				"drawOpositeSide()	void"
 			],
@@ -48,20 +132,12 @@
 				"tmp()	Temp *"
 			],
 			[
-				"e",
-				"empty() const	bool"
-			],
-			[
 				"Fi",
 				"finPos()	RoadRef"
 			],
 			[
 				"for",
 				"for	For Loop"
-			],
-			[
-				"glVertex",
-				"glVertex2d(GLdouble x, GLdouble y)	void"
 			],
 			[
 				"ba",
@@ -98,10 +174,6 @@
 			[
 				"AS",
 				"AStarTemp	class"
-			],
-			[
-				"r",
-				"rel()	std::vector<Road> *"
 			],
 			[
 				"beg",
@@ -166,10 +238,6 @@
 			[
 				"GL_STIPPLE_",
 				"GL_LINE_STIPPLE_REPEAT	macro"
-			],
-			[
-				"GL_LINE_S",
-				"GL_LINE_STIPPLE	macro"
 			],
 			[
 				"glLine",
@@ -304,10 +372,6 @@
 				"manual	bool"
 			],
 			[
-				"a",
-				"a	int"
-			],
-			[
 				"On",
 				"OnCrossroad	State"
 			],
@@ -424,10 +488,6 @@
 				"OnWay	State"
 			],
 			[
-				"def",
-				"defScale	const double"
-			],
-			[
 				"begi",
 				"begin	CroadRef"
 			],
@@ -454,84 +514,40 @@
 			[
 				"zo",
 				"zoomOut()	void"
-			],
-			[
-				"D",
-				"Down	Direction"
-			],
-			[
-				"map",
-				"map	Map"
-			],
-			[
-				"GL_POINT",
-				"GL_POINT	macro"
-			],
-			[
-				"GL_DEPTH_BU",
-				"GL_DEPTH_BUFFER_BIT	macro"
-			],
-			[
-				"setDest",
-				"setDest(CroadRef dest)	void"
-			],
-			[
-				"plan",
-				"plane1	Plane"
-			],
-			[
-				"S",
-				"SPEED"
-			],
-			[
-				"subj",
-				"subjects"
-			],
-			[
-				"ec",
-				"echo"
-			],
-			[
-				"mysqlf",
-				"mysql_fetch_assoc"
-			],
-			[
-				"mysql_fet",
-				"mysql_fetch_assoc"
-			],
-			[
-				"crr",
-				"correctSpeed"
-			],
-			[
-				"cou",
-				"countWay"
-			],
-			[
-				"fr",
-				"frCar	CarRef"
-			],
-			[
-				"f",
-				"finD	double"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "main.cpp",
+			"file": "engine/center.h",
 			"settings":
 			{
-				"buffer_size": 5121,
+				"buffer_size": 208,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "engine/corner.cpp",
+			"file": "engine/center.cpp",
 			"settings":
 			{
-				"buffer_size": 19,
+				"buffer_size": 4363,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "engine/edge.h",
+			"settings":
+			{
+				"buffer_size": 240,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "engine/edge.cpp",
+			"settings":
+			{
+				"buffer_size": 8527,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +555,15 @@
 			"file": "engine/corner.h",
 			"settings":
 			{
-				"buffer_size": 190,
+				"buffer_size": 330,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "engine/corner.cpp",
+			"settings":
+			{
+				"buffer_size": 7546,
 				"line_ending": "Unix"
 			}
 		},
@@ -547,7 +571,7 @@
 			"file": "engine/face.cpp",
 			"settings":
 			{
-				"buffer_size": 19,
+				"buffer_size": 12772,
 				"line_ending": "Unix"
 			}
 		},
@@ -555,67 +579,68 @@
 			"file": "engine/face.h",
 			"settings":
 			{
-				"buffer_size": 146,
+				"buffer_size": 667,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "engine/part.cpp",
+			"file": "engine/utils.h",
 			"settings":
 			{
-				"buffer_size": 17,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "engine/part.h",
-			"settings":
-			{
-				"buffer_size": 116,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "engine/side.cpp",
-			"settings":
-			{
-				"buffer_size": 19,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "engine/side.h",
-			"settings":
-			{
-				"buffer_size": 92,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/taras/dev/main.cpp",
-			"settings":
-			{
-				"buffer_size": 1264,
+				"buffer_size": 108,
 				"line_ending": "Unix",
-				"name": "main.cpp"
+				"name": "utils.h"
 			}
 		},
 		{
-			"file": "/home/taras/dev/k.cpp",
+			"file": "engine/utils.cpp",
 			"settings":
 			{
-				"buffer_size": 2887,
-				"line_ending": "Unix",
-				"name": "k.cpp"
+				"buffer_size": 552,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/taras/dev/m.cpp",
+			"file": "engine/megaminx.cpp",
 			"settings":
 			{
-				"buffer_size": 1027,
-				"line_ending": "Unix",
-				"name": "m.cpp"
+				"buffer_size": 3587,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "engine/megaminx.h",
+			"settings":
+			{
+				"buffer_size": 322,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.cpp",
+			"settings":
+			{
+				"buffer_size": 5394,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/media/1650193550191D55/my/Adobe Photoshop 7.0/serial.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/tmp/patchfont.sh",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -695,9 +720,67 @@
 	},
 	"file_history":
 	[
-		"/home/taras/l.cpp",
-		"/home/taras/todo.txt",
+		"/home/taras/interview",
+		"/home/taras/.wine/drive_c/Program Files (x86)/Adobe/Photoshop 7.0/Required/Default New Doc Sizes.txt",
+		"/home/taras/.wine/drive_c/Program Files (x86)/Adobe/Photoshop 7.0/Presets/New Doc Sizes.txt",
+		"/home/taras/.wine/drive_c/Program Files (x86)/Adobe/Photoshop 7.0/Presets/Tools/Text.tpl",
+		"/home/taras/.wine/drive_c/Program Files (x86)/Adobe/Photoshop 7.0/Legal/USEnglish.txt",
+		"/home/taras/.wine/drive_c/Program Files (x86)/Adobe/Photoshop 7.0/Photoshop.reg",
+		"/var/lib/locales/supported.d/ru",
+		"/usr/share/wine/fonts/tahoma.ttf",
+		"/var/lib/locales/supported.d/local",
+		"/home/taras/dev/todo.txt",
+		"/home/taras/geom",
+		"/etc/default/grub",
 		"/home/taras/main.cpp",
+		"/home/taras/Music/import/35174641_135123810.covers",
+		"/media/MEMORY CARD/Cube_Timer/config.txt",
+		"/home/taras/Downloads/Skype/tetrahedron/tetrahedron.cpp",
+		"/home/taras/dev/investigation/log/log.h",
+		"/home/taras/dev/investigation/log/log.cpp",
+		"/home/taras/city-sim/applogs.txt",
+		"/home/taras/city-sim/main.cpp",
+		"/home/taras/city-sim/engine/croad.cpp",
+		"/home/taras/todo.txt",
+		"/home/taras/dev/megaminx/main.cpp",
+		"/media/09249500-1651-4100-9767-9559bf136993/taras/diff/tasklist.txt",
+		"/media/09249500-1651-4100-9767-9559bf136993/taras/tmp/Статья",
+		"/home/taras/dev/megaminx/engine/axis.h",
+		"/home/taras/dev/megaminx/engine/axis.cpp",
+		"/home/taras/applogs.txt",
+		"/home/taras/Downloads/Skype/tetrahedron/main.cpp",
+		"/home/taras/Downloads/Skype/tetrahedron/tetrahedron.pro",
+		"/home/taras/dev/megaminx/engine/utils.cpp",
+		"/home/taras/dev/megaminx/engine/corner.cpp",
+		"/home/taras/dev/megaminx/engine/center.cpp",
+		"/var/www/hometasks/style.css",
+		"/home/taras/dev/Kubik_Rubika(of.ver.)/education.cpp",
+		"/home/taras/dev/investigation/ds/double_square",
+		"/home/taras/dev/investigation/ans",
+		"/home/taras/dev/investigation/double_square",
+		"/etc/xneur/xneurrc",
+		"/home/taras/dev/megaminx/engine/edge.h",
+		"/home/taras/dev/megaminx/engine/corner.h",
+		"/home/taras/dev/megaminx/engine/edge.cpp",
+		"/home/taras/dev/megaminx/engine/megaminx.cpp",
+		"/home/taras/dev/megaminx/engine/face.cpp",
+		"/home/taras/dev/megaminx/engine/face.h",
+		"/home/taras/dev/megaminx/engine/megaminx.h",
+		"/home/taras/dev/megaminx/engine/center.h",
+		"/home/taras/dev/megaminx/engine/asix.cpp",
+		"/home/taras/dev/megaminx/engine/asix.h",
+		"/home/taras/dev/megaminx/engine/.h",
+		"/home/taras/dev/m.cpp",
+		"/home/taras/dev/k.cpp",
+		"/home/taras/dev/main.cpp",
+		"/home/taras/dev/megaminx/engine/side.h",
+		"/home/taras/dev/megaminx/engine/side.cpp",
+		"/home/taras/dev/megaminx/engine/part.h",
+		"/home/taras/dev/megaminx/engine/part.cpp",
+		"/home/taras/dev/megaminx/engine/engine.h",
+		"/home/taras/dev/megaminx/engine/engine.cpp",
+		"/home/taras/dev/megaminx/engine.h",
+		"/home/taras/l.cpp",
 		"/home/taras/dev/megaminx/makefile",
 		"/home/taras/dev/megaminx/corner.h",
 		"/home/taras/dev/megaminx/corner.cpp",
@@ -764,65 +847,7 @@
 		"/home/taras/oldv/city-simulator/engine/car.cpp",
 		"/home/taras/oldv/city-simulator/main.cpp",
 		"/home/taras/oldv/city-simulator/makefile",
-		"/home/taras/new/education.ui",
-		"/home/taras/oldv/city-simulator/ui/lodepng.h",
-		"/home/taras/new/ui/lodepng.cpp",
-		"/media/3CA0509DA0506006/_МАН/Kubik_Rubika-build-desktop/release/moc_mainwindow_kubik.cpp",
-		"/home/taras/city-simulator/engine/temp.cpp",
-		"/home/taras/city-simulator/engine/road.h",
-		"/home/taras/city-simulator/engine/road.cpp",
-		"/home/taras/city-simulator/engine/croad.h",
-		"/home/taras/city-simulator/engine/car.cpp",
-		"/home/taras/.config/sublime-text-2/Packages/SublimeClang/SublimeClang.sublime-settings",
-		"/home/taras/Downloads/Guitar_Pro_5.2_rus/Readme.txt",
-		"/home/taras/city-simulator/applogs.txt",
-		"/home/taras/city-simulator/main.cpp",
-		"/home/taras/.config/sublime-text-2/Packages/SublimeAStyleFormatter/SublimeAStyleFormatter.sublime-settings",
-		"/var/www/site/index.php",
-		"/home/taras/.config/sublime-text-2/Packages/PHP/for(-).sublime-snippet",
-		"/home/taras/city-simulator/engine/log.cpp",
-		"/home/taras/city-simulator/engine/log.h",
-		"/home/taras/.config/sublime-text-2/Packages/C++/C++.sublime-build",
-		"/home/taras/.config/sublime-text-2/Packages/Makefile/Make.sublime-build",
-		"/home/taras/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
-		"/home/taras/transport system/engine fix/city-simulator/engine/car.cpp",
-		"/media/Windows USB/System Volume Information/IndexerVolumeGuid",
-		"/home/taras/diff/Untitled Folder/check.sh",
-		"/home/taras/gravity-sim/units.cpp",
-		"/home/taras/gravity-sim/main.cpp",
-		"/home/taras/known songs",
-		"/media/UDF Volume/efi/microsoft/boot/bcd",
-		"/home/taras/enginefix/city-simulator/makefile",
-		"/home/taras/Dropbox/ман.txt",
-		"/home/taras/Dropbox/Інфолрматика(конспект).txt",
-		"/home/taras/Dropbox/engine.cpp",
-		"/home/taras/Downloads/lesson1/main.cpp",
-		"/home/taras/Downloads/lesson1/Makefile",
-		"/home/taras/Dropbox/bookmarks-2013-04-27.json",
-		"/home/taras/enginefix/city-simulator/engine/croad.cpp",
-		"/home/taras/transport system/engine fix/city-simulator/engine/trsys.cpp",
-		"/home/taras/enginefix/city-simulator/engine/pos2d.cpp",
-		"/home/taras/enginefix/city-simulator/main.cpp",
-		"/home/taras/enginefix/city-simulator/ui/map.h",
-		"/home/taras/enginefix/city-simulator/ui/map.cpp",
-		"/var/www/labs/index.html",
-		"/home/taras/Common/marilyn_manson-the_last_day_on_earth_live.gp3",
-		"/var/www/labs/table.html",
-		"/var/www/labs/laba2_2/students.html",
-		"/var/www/labs/laba2_2/Students/ruban.html",
-		"/var/www/labs/laba2_2/Students/puzanov.html",
-		"/var/www/labs/laba2_2/Students/pulinets.html",
-		"/var/www/labs/laba2_2/Students/lytvyn.html",
-		"/var/www/labs/laba2_2/Students/krasnikova.html",
-		"/var/www/labs/laba2_2/Students/kotkova.html",
-		"/var/www/labs/laba2_2/Students/dovganuk.html",
-		"/var/www/labs/laba2_2/Students/chabala.html",
-		"/var/www/labs/laba2_2/Students/bublik.html",
-		"/var/www/labs/laba2_2/Students/baran.html",
-		"/var/www/labs/laba2_2/Students/10.html",
-		"/var/www/labs/laba2_2/Students/9.html",
-		"/var/www/labs/laba2_2/Students/8.html",
-		"/var/www/labs/laba2_2/Students/7.html"
+		"/home/taras/new/education.ui"
 	],
 	"find":
 	{
@@ -841,6 +866,119 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"500",
+			"300",
+			"200",
+			"1000",
+			"activeWindow",
+			"30",
+			"90",
+			"pressedKey",
+			"button",
+			"int",
+			"light0_diffuse",
+			"GL_LIGHT0",
+			"GL_LIGHT2",
+			"turnDir",
+			"replaceDetails",
+			"72",
+			"swapCorners",
+			"initCenter",
+			"corner",
+			"n",
+			"turnDir",
+			"n",
+			"_vertex",
+			"edge",
+			"axis",
+			"_vertex",
+			"initColor",
+			" + ",
+			"5",
+			"4",
+			" + ",
+			"n",
+			" + ",
+			"edge",
+			"int",
+			"Corner",
+			"int",
+			"edge",
+			"a",
+			"initColor",
+			"GL_POLYGON",
+			"5",
+			"PI * 2 / 5 * 0 + ",
+			" * 1",
+			"_color",
+			"case",
+			"FaceColor",
+			"c2",
+			"c1",
+			"[i]",
+			"\n			break;",
+			"\n			break;\n",
+			"1",
+			"0.6",
+			"vX",
+			"rotateVertex",
+			" Т ",
+			" Р ",
+			" П ",
+			" О ",
+			" Н ",
+			" М ",
+			" Л ",
+			" К ",
+			" Й ",
+			" Ї ",
+			" І ",
+			" И ",
+			" З ",
+			" Ж ",
+			" Є ",
+			" Е ",
+			" Д ",
+			" Г ",
+			" В ",
+			" |",
+			" B ",
+			"В",
+			"| ",
+			" B ",
+			" Б ",
+			" А ",
+			"й",
+			"Л",
+			"   ",
+			"  ",
+			"Я ",
+			"Я",
+			"Л",
+			"Е",
+			"Г",
+			"Н",
+			"А",
+			"Б",
+			"Ю",
+			"Л",
+			"Я",
+			" / 5 * 2",
+			"INS_CIRCLE_RAD",
+			"5 * 3",
+			"3",
+			"face",
+			" + PI / 2",
+			"asix",
+			"Asix",
+			"corner",
+			"Corner",
+			"Face",
+			"Center",
+			"Edge",
+			"Corner",
+			"__face_h__",
+			"0.4",
 			" 0.5",
 			"0.1",
 			"glColor3d",
@@ -855,120 +993,7 @@
 			"180",
 			"288 / PI / 2",
 			"72 / PI / 2",
-			"540",
-			"432",
-			"324",
-			"216",
-			"PI",
-			"108",
-			"100",
-			"lodepng_state_cleanup",
-			"lodepng_decode",
-			"lodepng_color_mode_init",
-			"lodepng_state_init",
-			"LodePNGState",
-			"State",
-			"LodePNGColorType",
-			"LodePNGColorMode",
-			"LodePNGState",
-			"free",
-			"lodepng_free(",
-			"lodepng_free",
-			"LodePNGState",
-			"decode(std::vector<unsigned char>& out, unsigned& w, unsigned& h,\n                const std::string& filename,",
-			"LodePNGColorType",
-			"decode(",
-			"decode",
-			"decode(",
-			"100",
-			"quad",
-			"GLUquadric",
-			"100",
-			" - 200",
-			"mageminx",
-			"trsys",
-			"150",
-			"24",
-			"23",
-			"22",
-			"21",
-			"20",
-			"19",
-			"18",
-			"17",
-			"16",
-			"15",
-			"14",
-			"13",
-			"12",
-			"24",
-			"23",
-			"fin",
-			"pos",
-			"temp.",
-			"c",
-			"lenth",
-			"temp.",
-			"i->end->temp",
-			" = T",
-			"road",
-			"TStart",
-			"!= TUnknown",
-			"border",
-			"_pos",
-			"_pos.road",
-			"rp",
-			"c->pos()->end()",
-			"R",
-			" \n",
-			"prevAng",
-			"Template",
-			"trsystem",
-			"\n",
-			"int",
-			"Car",
-			"ctrl+shift+b",
-			"ctrl+b",
-			"startdist",
-			"_breakPoint",
-			"cos",
-			");\n",
-			"10",
-			"halfAngle",
-			"defWeight",
-			"glutGet(GLUT_WINDOW_HEIGHT)",
-			"x",
-			"al",
-			"map.",
-			"angle",
-			"rpos",
-			"pulinetc",
-			"example",
-			"align",
-			"Катерина Красникова",
-			"example",
-			"charset",
-			"example",
-			"7",
-			"1",
-			"href",
-			"_pos->",
-			"_pos",
-			"_dist",
-			"_road",
-			"pos->",
-			"pos",
-			"_pos()",
-			"pos",
-			"dist",
-			"small",
-			"map.scale",
-			"destpos",
-			"_Road",
-			"road",
-			"Road",
-			"road",
-			"Road"
+			"540"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -987,42 +1012,15 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "main.cpp",
+					"file": "engine/center.h",
 					"settings":
 					{
-						"buffer_size": 5121,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3675,
-								3675
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1567.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "engine/corner.cpp",
-					"settings":
-					{
-						"buffer_size": 19,
+						"buffer_size": 208,
 						"regions":
 						{
 						},
@@ -1044,19 +1042,46 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "engine/corner.h",
+					"buffer": 1,
+					"file": "engine/center.cpp",
 					"settings":
 					{
-						"buffer_size": 190,
+						"buffer_size": 4363,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								76,
-								76
+								1451,
+								1451
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 836.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "engine/edge.h",
+					"settings":
+					{
+						"buffer_size": 240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
 							]
 						],
 						"settings":
@@ -1071,49 +1096,51 @@
 				},
 				{
 					"buffer": 3,
-					"file": "engine/face.cpp",
+					"file": "engine/edge.cpp",
 					"settings":
 					{
-						"buffer_size": 19,
+						"buffer_size": 8527,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19,
-								19
+								8437,
+								8437
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.tmLanguage"
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 7068.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "engine/face.h",
+					"file": "engine/corner.h",
 					"settings":
 					{
-						"buffer_size": 146,
+						"buffer_size": 330,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								135,
-								135
+								42,
+								42
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.tmLanguage"
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1123,62 +1150,65 @@
 				},
 				{
 					"buffer": 5,
-					"file": "engine/part.cpp",
+					"file": "engine/corner.cpp",
 					"settings":
 					{
-						"buffer_size": 17,
+						"buffer_size": 7546,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								7337,
+								7337
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.tmLanguage"
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 6550.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "engine/part.h",
+					"file": "engine/face.cpp",
 					"settings":
 					{
-						"buffer_size": 116,
+						"buffer_size": 12772,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								105,
-								105
+								7939,
+								7939
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.tmLanguage"
+							"spell_check": true,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 7622.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 7,
-					"file": "engine/side.cpp",
+					"file": "engine/face.h",
 					"settings":
 					{
-						"buffer_size": 19,
+						"buffer_size": 667,
 						"regions":
 						{
 						},
@@ -1191,7 +1221,8 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.tmLanguage"
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1201,22 +1232,23 @@
 				},
 				{
 					"buffer": 8,
-					"file": "engine/side.h",
+					"file": "engine/utils.h",
 					"settings":
 					{
-						"buffer_size": 92,
+						"buffer_size": 108,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								40,
+								40
 							]
 						],
 						"settings":
 						{
+							"auto_name": "utils.h",
 							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -1227,23 +1259,22 @@
 				},
 				{
 					"buffer": 9,
-					"file": "/home/taras/dev/main.cpp",
+					"file": "engine/utils.cpp",
 					"settings":
 					{
-						"buffer_size": 1264,
+						"buffer_size": 552,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17,
-								17
+								540,
+								540
 							]
 						],
 						"settings":
 						{
-							"auto_name": "main.cpp",
 							"syntax": "Packages/C++/C++.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1255,55 +1286,130 @@
 				},
 				{
 					"buffer": 10,
-					"file": "/home/taras/dev/k.cpp",
+					"file": "engine/megaminx.cpp",
 					"settings":
 					{
-						"buffer_size": 2887,
+						"buffer_size": 3587,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2184,
-								2184
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"auto_name": "k.cpp",
 							"syntax": "Packages/C++/C++.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1210.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 11,
-					"file": "/home/taras/dev/m.cpp",
+					"file": "engine/megaminx.h",
 					"settings":
 					{
-						"buffer_size": 1027,
+						"buffer_size": 322,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1027,
-								1027
+								187,
+								187
 							]
 						],
 						"settings":
 						{
-							"auto_name": "m.cpp",
 							"syntax": "Packages/C++/C++.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "main.cpp",
+					"settings":
+					{
+						"buffer_size": 5394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2608,
+								2608
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2030.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/media/1650193550191D55/my/Adobe Photoshop 7.0/serial.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/tmp/patchfont.sh",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
