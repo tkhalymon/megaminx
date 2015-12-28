@@ -12,12 +12,12 @@ public:
 
 	void render();
 	void rotate(int, int);
-
+	void scramble();
 	double n;
 	double k;
+	bool _rotate;
 private:
 
-	bool _rotate;
 	int rSide;
 
 	Face face[12];

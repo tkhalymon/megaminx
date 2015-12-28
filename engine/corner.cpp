@@ -286,20 +286,26 @@ void Corner::render()
 	glBegin(GL_LINE_LOOP);
 	for (int i = 0; i < 4; ++i)
 	{
-		glVertex3dv(_vertex[i]);
+		// glVertex3dv(_vertex[i]);
+		glVertex3d(_vertex[i][0] * 1.005, _vertex[i][1] * 1.005, _vertex[i][2] * 1.005);
 	}
 	glEnd();
 	glBegin(GL_LINE_LOOP);
 	for (int i = 2; i < 6; ++i)
 	{
-		glVertex3dv(_vertex[i]);
+		// glVertex3dv(_vertex[i]);
+		glVertex3d(_vertex[i][0] * 1.005, _vertex[i][1] * 1.005, _vertex[i][2] * 1.005);
 	}
 	glEnd();
 	glBegin(GL_LINE_LOOP);
-	glVertex3dv(_vertex[2]);
-	glVertex3dv(_vertex[5]);
-	glVertex3dv(_vertex[6]);
-	glVertex3dv(_vertex[1]);
+	// glVertex3dv(_vertex[2]);
+	// glVertex3dv(_vertex[5]);
+	// glVertex3dv(_vertex[6]);
+	// glVertex3dv(_vertex[1]);
+	glVertex3d(_vertex[2][0] * 1.005, _vertex[2][1] * 1.005, _vertex[2][2] * 1.005);
+	glVertex3d(_vertex[5][0] * 1.005, _vertex[5][1] * 1.005, _vertex[5][2] * 1.005);
+	glVertex3d(_vertex[6][0] * 1.005, _vertex[6][1] * 1.005, _vertex[6][2] * 1.005);
+	glVertex3d(_vertex[1][0] * 1.005, _vertex[1][1] * 1.005, _vertex[1][2] * 1.005);
 	glEnd();
 }
 

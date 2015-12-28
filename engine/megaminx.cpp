@@ -1,5 +1,6 @@
 #include "megaminx.h"
 #include <iostream>
+#include <stdlib.h>
 
 Megaminx::Megaminx()
 {
@@ -139,10 +140,6 @@ void Megaminx::render()
 		}
 	}
 }
-// void Megaminx::render()
-// {
-// 	face[1].render();
-// }
 
 void Megaminx::rotate(int num, int dir)
 {
@@ -151,5 +148,13 @@ void Megaminx::rotate(int num, int dir)
 		_rotate = true;
 		rSide = num;
 		face[num].rotate(dir);
+	}
+}
+
+void Megaminx::scramble()
+{
+	for (int i = 0; i < 50; ++i)
+	{
+		this->face[rand() % 12].placeParts(rand() % 2 * 2 - 1);
 	}
 }

@@ -21,4 +21,4 @@ private:
 	double _vertex[6][3];
 };
 
-#endif
+#endif 	

@@ -562,7 +562,7 @@ void Face::placeParts(int dir)
 
 bool Face::render()
 {
-	if (_rotate) angle += turnDir * 8;
+	if (_rotate) angle += turnDir * 5;
 	glPushMatrix();
 	glRotated(angle, axis[0], axis[1], axis[2]);
 
@@ -590,7 +590,7 @@ bool Face::render()
 
 	if (turnDir == 1)
 	{
-		if (angle >= 71)
+		if (angle >= 69)
 		{
 			angle = 0;
 			_rotate = false;
@@ -600,7 +600,7 @@ bool Face::render()
 	}
 	else
 	{
-		if (angle <= -71)
+		if (angle <= -69)
 		{
 			angle = 0;
 			_rotate = false;

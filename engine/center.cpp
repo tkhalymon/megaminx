@@ -193,12 +193,13 @@ void Center::render()
 		glVertex3dv(_vertex[i]);
 	}
 	glEnd();
-	glLineWidth(3);
+	glLineWidth(4);
 	glColor3d(0, 0, 0);
 	glBegin(GL_LINE_LOOP);
 	for (int i = 0; i < 5; ++i)
 	{
-		glVertex3dv(_vertex[i]);
+		// glVertex3dv(_vertex[i]);
+		glVertex3d(_vertex[i][0] * 1.005, _vertex[i][1] * 1.005, _vertex[i][2] * 1.005);
 	}
 	glEnd();
 }

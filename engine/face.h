@@ -20,6 +20,7 @@ public:
 
 	bool render();
 	void rotate(int);
+	void placeParts(int dir);
 
 	Corner *corner[5];
 	Edge *edge[5];
@@ -27,7 +28,6 @@ public:
 
 private:
 
-	void placeParts(int dir);
 	void swapCorners(int, int);
 	void swapEdges(int, int);
 

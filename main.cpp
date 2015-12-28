@@ -2,14 +2,16 @@
 #include <math.h>
 #include <iostream>
 #include "engine/megaminx.h"
+#include <time.h>
+#include <stdlib.h>
 
 Megaminx megaminx;
 
 double viewAngle = 30;
 double a = -250;
 int activeWindow = 0;
-	
-bool paused = true;
+
+bool paused = false;
 
 double defN = 0;
 double defK = 0;
@@ -34,11 +36,12 @@ const double INS_CIRCLE_RAD = 70 / sqrt((5 - sqrt(5)) / 2);
 
 int main(int argc, char *argv[])
 {
+	srand(time(NULL));
 	glutInit(&argc, argv);
 	// int w = glutGet(GLUT_SCREEN_WIDTH) - 500;
 	// int h = glutGet(GLUT_SCREEN_HEIGHT) - 200;
-	int w = 500;
-	int h = 500;
+	int w = 700;
+	int h = 700;
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
 	glutInitWindowSize(w, h);
 	glutCreateWindow("Megaminx v 1.0");
@@ -59,7 +62,7 @@ int main(int argc, char *argv[])
 
 	glTranslated(0, 0, -800);
 	// glRotated(-90, 1, 0, 0);
-	
+	glLineWidth(4);
 	
 	// glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
 	// glutInitWindowSize(500, 20);
@@ -86,15 +89,13 @@ int main(int argc, char *argv[])
 
 void reshape()
 {
-	int w = glutGet(GLUT_SCREEN_WIDTH) - 500;
-	int h = glutGet(GLUT_SCREEN_HEIGHT) - 200;
+	int w = glutGet(GLUT_WINDOW_WIDTH);
+	int h = glutGet(GLUT_WINDOW_HEIGHT);
 	glutReshapeWindow(w, h);
 	glLoadIdentity();
-	// glMatrixMode(GL_PROJECTION);
-	// gluPerspective(30, (double)((double)w / (double)h), 1.0, 10000.0);
-	// glMatrixMode(GL_MODELVIEW);
 }
 
+int depth = 0;
 void display()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -102,18 +103,12 @@ void display()
 	glEnable(GL_BLEND);
 	glEnable(GL_ALPHA);
 	glPointSize(5);
-	
-	// a++;
-	// glBegin(GL_POINTS);
-	// glVertex3d(-80, 0, 500);
-	// glVertex3d(a, 0, 500);
-	// glEnd();
-	
+		
 	glPushMatrix();
 	glRotated(megaminx.n, -1, 0, 0);
 	glRotated(megaminx.k, 0, 0, 1);
 	megaminx.render();
-	glTranslated(0, 0, -100);
+	glTranslated(0, 0, -100 + depth);
 	glPopMatrix();
 	glDisable(GL_BLEND);
 	glDisable(GL_DEPTH_TEST);
@@ -121,35 +116,11 @@ void display()
 	glutSwapBuffers();
 }
 
-// void display1()
-// {
-// 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-// 	glEnable(GL_DEPTH_TEST);
-// 	glEnable(GL_BLEND);
-// 	glEnable(GL_ALPHA);
-// 	glPointSize(5);
-// 	glBegin(GL_POINTS);
-// 		glVertex3d(atan(a / 250) * 500 / 6, 0, 500);
-// 	glEnd();
-// 	glPushMatrix();
-// 	glTranslated(0, 0, -100);
-// 	glPopMatrix();
-// 	glDisable(GL_BLEND);
-// 	glDisable(GL_DEPTH_TEST);
-// 	glDisable(GL_LIGHT1);
-// 	glutSwapBuffers();
-// }
-
 void timer(int)
 {
-	// glutSetWindow(2);
-	// activeWindow = 2;
 	glutPostRedisplay();
-	// display1();
-	// glutSetWindow(1);
-	// activeWindow = 1;
-	// display();
 	glutTimerFunc(2, timer, 0);
+	
 }
 
 void mousePressed(int button, int state, int x, int y)
@@ -161,6 +132,14 @@ void mousePressed(int button, int state, int x, int y)
 		defMY = y;
 		defN = megaminx.n;
 		defK = megaminx.k;
+	}
+	if (button == 4)
+	{
+		depth++;
+	}
+	if (button == 5)
+	{
+		depth--;
 	}
 }
 
@@ -174,8 +153,8 @@ void mousePressedMove(int x, int y)
 	if (pressedButton == GLUT_RIGHT_BUTTON)
 	{
 		megaminx.n = defN + (defMY - y) / 3;
-		if (megaminx.n > 180) megaminx.n = 180;
-		if (megaminx.n < -180) megaminx.n = -180;
+		// if (megaminx.n > 180) megaminx.n = 180;
+		// if (megaminx.n < -180) megaminx.n = -180;
 		megaminx.k = defK + (x - defMX) / 3;
 	}
 }
@@ -190,6 +169,9 @@ void keyboard(unsigned char key, int x, int y)
 		break;
 	case ' ':
 		paused = !paused;
+		break;
+	case 8:
+		megaminx.scramble();
 		break;
 	}
 }
