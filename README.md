@@ -1,6 +1,6 @@
 megaminx
 ========
-<p>It's a working simulator of Rubik's cube like puzzle named <b>Megaminx</b>
+<p>It's a working simulator of Rubik's cube like puzzle named <b>Megaminx</b><br />
 Unfortunately, mouse controls still not realized.</p>
 <h2>Controls:</h2>
 <p>F1-12 - rotate sides, shift+F1-12 - rotate this side backwards<br />
