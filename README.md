@@ -7,5 +7,5 @@ Unfortunately, mouse controls still not realized.</p>
 backspace - scramble<br />
 space - pause (just for testing render, cause there's no timer)</p>
 <h2>Build & run</h2>
-<p>You'll need libraries: `g++ make freeglut3-dev`<br />
-Build with `make`, run with `make run`</p>
+You'll need libraries: `g++ make freeglut3-dev`<br />
+Build with `make`, run with `make run`
